@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindscape</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../Icons/book.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="black-bg"></div>
+    <header>
+        <nav>
+
+            <div class="logo_and_title">
+                <div id="title_logo">
+                    <img height="30" src="../Icons/book.png" alt="Book Icon">
+                    <h1 class="title"> <a href="../index.html">Mindscape</a></h1>
+
+                </div>
+
+                <div id="pages">
+                    <a href="../index.html">Home</a>
+                    <a href="./blog.html">Blogs</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    
+                </div>
+            </div>
+
+
+            <div class="right">
+                <button class="write">
+                    <img height="20" src="../Icons/contract.png" alt="write-icon">
+                    Write
+                </button>
+            </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
+             <!-- mobile view menu -->
+             <div class="mobile-menu">
+                <a href="../index.html">Home</a>
+                <a href="./blog.html">Blogs</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                
+                <button class="write-mobile">
+                    <a  >
+                        <img height="20" src="../Icons/contract.png" alt="write-icon">
+                        Write
+                    </a>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- section 1 -->
+        <section>
+            <div id="search-section">
+                <h1 class="search-section-title">Explore Our Stories</h1>
+                <div class="section1-content">
+                    <p>Dciscover insights, experiences, and knowledge shared by our community of writers.</p>
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Search Blogs" name="searchBlogs" id="searchBlogs">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- main blog section -->
+        <section class="full-blog-section">
+            <div id="blogs-section">
+                <!-- categories section -->
+                <div class="categories-section">
+                    <button class="category-button" id="All">All</button>
+                    <button class="category-button" id="Technology">Technology</button>
+                    <button class="category-button" id="Lifestyle">Lifestyle</button>
+                    <button class="category-button" id="Business">Business</button>
+                    <button class="category-button" id="Travel">Travel</button>
+                    <button class="category-button" id="Health">Health</button>
+                    <button class="category-button" id="Culture">Culture</button>
+                </div>
+
+                <!-- blog section -->
+                <div class="blogs-container">
+                    <!-- <div class="blogs-card" data-id="1">
+                        <div class="card-image">
+                            <img src="../Images/Blogs Images/Technology/first.jpg" alt="">
+                            <span class="category-tag">Technology</span>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">The Future of AI in Content Creation</h2>
+                            <p class="card-description">Exploring how artificial intelligence is revolutionizing the way
+                                we
+                                create and consume content...</p>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <div class="author-avatar">
+                                        <img src="../Images/userimage/person1.jpg" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <span class="author-name">John Doe</span>
+                                        <span class="read-time">5 min read</span>
+                                    </div>
+                                </div>
+                                <div class="interaction-buttons">
+                                    <button class="interaction-button heart">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                        </svg>
+                                    </button>
+                                    <button class="interaction-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                        </svg>
+                                    </button>
+                                    <button class="interaction-button">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M7 17l9.2-9.2M17 17V7H7" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+    </main>
+
+
+    <!-- blogwrite -->
+    <section class="blog-write-section">
+        <div class="write-blog hidden">
+            <h2 class="form-title">Create Your Story</h2>
+            <form id="blogForm">
+                <div class="form-group highlight">
+                    <label for="blogImage">Cover Image</label>
+                    <input type="file" id="blogImage" accept="image/*">
+                    <img id="imagePreview" class="image-preview">
+                </div>
+
+                <div class="form-group">
+                    <label for="blogCategory">Category</label>
+                    <select id="blogCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Business">Business</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Health">Health</option>
+                        <option value="Culture">Culture</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="blogTitle">Title</label>
+                    <input type="text" id="blogTitle" required placeholder="Make it catchy!">
+                </div>
+
+                <div class="form-group highlight">
+                    <label for="blogContent">Your Story</label>
+                    <textarea id="blogContent" required placeholder="Share your thoughts..."></textarea>
+                </div>
+
+                <div class="user-details">
+                    <div class="form-group">
+                        <label for="userName">Author Name</label>
+                        <input type="text" id="userName" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userImage">Profile Picture</label>
+                        <input type="file" id="userImage" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="readTime">Reading Time (minutes)</label>
+                    <input type="number" id="readTime" required min="1" placeholder="Est. reading time">
+                </div>
+
+                <button class="blog-write-btn" id="publish-btn" type="submit">Publish Your Story</button>
+            </form>
+        </div>
+    </section>
+
+
+     <!-- note taking feature -->
+     <button class="floating-notes-btn" aria-label="Open Notes">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z" />
+        </svg>
+    </button>
+
+    <!-- Notes Panel -->
+    <div class="notes-panel">
+        <div class="notes-header">
+            <h3>Quick Notes</h3>
+            <button class="close-notes" aria-label="Close Notes">✕</button>
+        </div>
+        <div class="notes-content">
+            <textarea  class="notes-input" placeholder="Write your note here..."></textarea>
+            <button class="save-note">Save Note</button>
+            <div class="notes-list"></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-section" id="footer1">
+                <div id="footer-name-logo">
+                    <img height="30" src="../Icons/book.png" alt="Book Icon">
+                    <h1 class="title">Mindscape</h1>
+                </div>
+                <p>Share your thoughts with the world. Join our community of writers and readers.</p>
+            </div>
+
+
+            <div class="footer-section" id="footer2">
+                <h4>Quick Links</h4>
+                <div class="links">
+                    <a href="./pages/blog.html">Blog</a>
+                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/contact.html">Contact</a>
+                    
+                </div>
+            </div>
+
+
+            <div class="footer-section" id="footer3">
+                <h4>Categories</h4>
+                <div class="links">
+                    <a href="./pages/blog.html">Technology</a>
+                    <a href="./pages/blog.html">Lifestyle</a>
+                    <a href="./pages/blog.html">Travel</a>
+                    <a href="./pages/blog.html">Business</a>
+                </div>
+            </div>
+
+
+            <div class="footer-section" id="footer4">
+                <h4>Follow Us</h4>
+                <div class="links">
+                    <a href="https://x.com/Gopaljha04">Twitter</a>
+                    <a href="https://www.instagram.com/gopal._16/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/gopal-jha-229a2b243/">LinkedIn</a>
+                    <a href="https://github.com/Gopaljha2004/MindScape">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Mindscape. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
