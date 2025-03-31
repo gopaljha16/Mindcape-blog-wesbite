@@ -2,7 +2,7 @@
 
 ## 1️⃣ Introduction
 
-The CoderArmy Second Hackathon Project: **BlogWebsite named as Mindscape**. This project is designed to let users create and read blogs seamlessly. With an intuitive interface, Mindscape aims to make sharing thoughts and ideas easier for everyone.
+ **BlogWebsite named as Mindscape**. This project is designed to let users create and read blogs seamlessly. With an intuitive interface, Mindscape aims to make sharing thoughts and ideas easier for everyone.
 
 ## 2️⃣ Features
 
